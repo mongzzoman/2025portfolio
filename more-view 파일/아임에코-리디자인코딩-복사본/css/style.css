@@ -1,0 +1,297 @@
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1rem;
+    /* overflow-x: hidden; */
+}
+
+/* 스크롤바 커스텀 */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 20%;
+    background-color: #616161;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(255,255,255,0.5);
+    position: absolute;
+    /* position: fixed; */
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+header .inner {
+    /* padding: 0 1rem; */
+}
+header .pc-header {
+    display: none;
+}
+header .mb-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .mb-header .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 16px;
+}
+header .mb-header .hamburger-menu span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    border-radius: 100px;
+}
+header .mb-header .logo {
+    display: block;
+}
+header .mb-header .logo p {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+header .mb-header .cart {
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 16px;
+    background:url(../images/tablet-icon-카트.png) no-repeat center;
+    background-size: 20px;
+}
+
+
+
+
+
+/* main-banner */
+.main-banner {
+    width: 100%;
+    height: 700px;
+    background: url(../images/mainbanner-1.png) no-repeat center/cover;
+    padding: 50px 0 0 0;
+    box-sizing: border-box;
+}
+
+
+
+/* main */
+main .inner {
+    /* padding: 0 1rem; */
+    --inner-padding: 1rem;
+    padding: 0 var(--inner-padding);
+    box-sizing: border-box;
+}
+
+
+/* best-product */
+.best-product {
+    padding: 9.5rem 0 0 0;
+}
+.best-product .list-box {    
+    flex-wrap: wrap;
+    /* gap: 8px; */
+}
+
+/* 공동 .list-box css */
+.list-box {
+    display: flex;
+    padding: 1.3rem 0 0 0;
+}
+
+
+.best-product .list-box li {
+    width: calc(50% - 4px);
+}
+.best-product .list-box li .img-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+.best-product .list-box li .img-box a.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.best-product .list-box li:nth-child(2n+1) {
+    padding-right: 8px;
+}
+.best-product .list-box li:nth-child(n+3):nth-child(-n+4) {
+    padding-top: 26px;
+}
+.best-product .list-box li:nth-child(1) .img-box a.img {
+    background: url(../images/green1.png) no-repeat center/cover;
+}
+.best-product .list-box li:nth-child(2) .img-box a.img {
+    background: url(../images/green2.png) no-repeat center/cover;
+}
+.best-product .list-box li:nth-child(3) .img-box a.img {
+    background: url(../images/green3.png) no-repeat center/cover;
+}
+.best-product .list-box li:nth-child(4) .img-box a.img {
+    background: url(../images/green4.png) no-repeat center/cover;
+}
+
+/* 공동 title css */
+.title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    color: #333;
+}
+.title p {
+    font-size: 1.5rem;
+    font-family: "suite";
+    font-weight: bold;
+}
+.title a.more {
+    font-size: .7rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.title a.more::after {
+    display: inline-block;
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: url(../images/more-icon.png) no-repeat center/12px;
+}
+
+
+.best-product .list-box li p {
+    padding: 8px 0 0 0;
+}
+.best-product .list-box li .txt-info {
+    font-size: .65rem;
+    color: #999;
+}
+.best-product .list-box li .txt-title {
+    font-size: .85rem;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /*원하는 라인 수*/
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.best-product .list-box li .txt-price {
+    font-size: .95rem;
+    font-weight: bold;
+}
+.best-product .list-box li .review {
+    color: #999;
+    font-size: .7rem;
+}
+.best-product .list-box li .review em {
+    color: #ff0000;
+}
+
+
+
+/* new-arrival */
+.new-arrival {
+    padding: 4rem 0;
+    /* width: 100vw !important;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); */
+    width: calc(100% + 2*var(--inner-padding));
+    margin-left: calc(-1 * var(--inner-padding));
+    margin-right: calc(-1 * var(--inner-padding));
+}
+.new-arrival .banner-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4.5 / 1;
+    /* aspect-ratio: 360 / 75; */
+    background: url(../images/new-arrival.png) no-repeat center/cover;
+}
+
+
+
+/* delivery */
+.delivery .delivery-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.delivery .list-box {
+    flex-direction: column;
+}
+.delivery .list-box>div:not(:first-child){
+    padding: 50px 0 0 0;
+}
+.delivery .list-box .img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+.delivery .list-box .first-box .img {
+    background: url(../images/고마운샘.png) no-repeat center/cover;
+}
+.delivery .list-box .second-box .img {
+    background: url(../images/가벼운샘.png) no-repeat center/cover;
+}
+.delivery .list-box .third-box .img {
+    background: url(../images/깨끗한샘.png) no-repeat center/cover;
+}
+
+.delivery .list-box .text-box {}
+.delivery .list-box .text-box .num {
+    display: none;
+}
+.delivery .list-box .text-box .title {
+    flex-direction: column;
+}
+.delivery .list-box .text-box .title p {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px 0 0 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+.delivery .list-box .text-box .title p.name {
+    font-size: 1.2rem;
+    font-family: "suite";
+    font-weight: 600;
+}
+.delivery .list-box .text-box .info p {
+    font-size: .9rem;
+    color: #333;
+    padding: 10px 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+/* eco-deal */
+.eco-deal {
+    overflow-x: hidden;
+}
