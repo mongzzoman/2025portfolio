@@ -1,0 +1,251 @@
+/* width 520px 이상일 때 */
+@media screen and (min-width:520px) {
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .eng-tit { font-size: 2.4rem; }
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .ko-tit { font-size: 6rem; }
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .comment { font-size: 1.2rem; }
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain { margin: 7.5rem 0 0 0; }
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain p { font-size: 1.2rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain ul li {font-size: 1.1rem; line-height: 1.6rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .eng-tit {font-size: 2.2rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .ko-tit {font-size: 3.8rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .comment {font-size: 1.2rem; line-height: 1.6rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .link {padding: 1rem; margin: 1rem 0 0 0; font-size: 1.2rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .link::after {height: 24px;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide3 .txt-box h1 {font-size: 3.5rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide3 .txt-box p {font-size: 1.2rem; line-height: 2rem;}
+    .md-recommend .product-box .title-list .tab {gap: 6px;}
+    .md-recommend .product-box .title-list .tab li a {font-size: .8rem; gap: 6px; padding: 6px 12px 6px 6px;}
+    .eco-deal .time-bg .time {font-size: 3.5rem;}
+    .event .event-swiper .swiper-pagination-fraction {width: 10%; left: 83%;}
+    footer .inner .footer-bottom ul {margin: 10px auto; width: 90%;}
+    footer .inner .footer-bottom ul li a {font-size: .7rem;}
+}
+
+
+/* width 740px 이상일 때 */
+@media screen and (min-width:740px){
+    html {font-size: 18px;}
+    body {font-size: 1rem;}
+    header .hamburger-popup .popup-wrapper {width: 70%;}
+    header .hamburger-popup .popup-wrapper .search input {height: 38px;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain { width: 70%; left: -7%; transform: translateX(0); bottom: 2rem; }
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain ul {justify-content: center;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain ul li {width: 23%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .link {width: 30%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide3 .txt-box h1 {padding: 0 6rem;}
+
+    .delivery .deli-list-box li {display: flex;}
+    .delivery .deli-list-box>li:not(:first-child){padding: 0;}
+
+    .delivery .deli-list-box .img {width: 50%;}
+    .delivery .deli-list-box .first-box .img {order: 1;}
+    .delivery .deli-list-box .first-box .text-box {order: 2; background-color: #CEE7FF;}
+    .delivery .deli-list-box .second-box .img {order: 2;}
+    .delivery .deli-list-box .second-box .text-box {order: 1;
+    background-color: #B1CCFF;}
+    .delivery .deli-list-box .third-box .img {order: 1;}
+    .delivery .deli-list-box .third-box .text-box {order: 2; background-color: #C6E8B1;}
+    .delivery .deli-list-box .text-box {width: 50%; aspect-ratio: 1 / 1; padding: 1rem; box-sizing: border-box; display: flex; flex-direction: column; position: relative;}
+
+    .delivery .deli-list-box .text-box .num {display: flex; gap: 6px;}
+    .delivery .deli-list-box .text-box .num li {font-size: .5rem; border: 1px solid #fff; text-align: center; width: 1.8rem; aspect-ratio: 1 / 1; border-radius: 100%; justify-content: center; align-items: center;}
+    .delivery .deli-list-box .text-box .num li.point {background-color: #fff;}
+    .delivery .deli-list-box .text-box .title {margin: 2.5rem 0 0 0;}
+    .delivery .deli-list-box .text-box .title p {font-weight: 500; padding: 0;}
+    .delivery .deli-list-box .text-box .info {justify-content: end; align-items: end; width: 50%; position: absolute; bottom: 1rem; right: 1rem;}
+    .delivery .deli-list-box .text-box .info p {font-size: .5rem; padding: 5px 0 0 0;}    
+    .delivery .deli-list-box .text-box .info p:first-child { font-size: .8rem; font-weight: 500;}
+
+    .md-recommend .product-box .title-list .tab li a::before {width: 1.5rem; height: 1.5rem; background-size: 16px !important;}
+
+    .list-box li .txt-title {font-size: 1rem;}
+
+    .eco-deal .mb-list-box {flex-direction: row; width: 100%; flex-wrap: wrap; gap: 0;}
+    .eco-deal .mb-list-box li {flex-direction: column; width: calc(50% - 4px); box-sizing: border-box;}
+    .eco-deal .mb-list-box li .img-box {width: 100%;}
+    .eco-deal .mb-list-box li:nth-child(2n+1) {padding-right: 8px;}
+    .eco-deal .mb-list-box li:nth-child(n+3):nth-child(-n+4) {padding-top: 26px;}
+    .eco-deal .mb-list-box li .txt-box {width: 100%;}
+
+    .event .event-swiper .swiper-slide {padding: 4rem 2.5rem;}
+    .event .event-swiper .slide1 .slide-title {font-size: 2.5rem;}
+    .event .event-swiper .slide1 .sub {font-size: 1rem; line-height: 1.6rem;}
+    .event .event-swiper .slide2 .slide-title, .event .event-swiper .slide3 .slide-title1, .event .event-swiper .slide3 .slide-title2 {font-size: 2rem; align-items: center;}
+    .event .event-swiper .slide2 .slide-title::after {width: 1.8rem; margin: 0 0 7px 0;}
+    .event .event-swiper .slide2 .sub, .event .event-swiper .slide3 .sub {font-size: .9rem; line-height: 1.6rem;}
+    .event .event-swiper .slide3 .slide-title1::before {width: 6rem; height: 2rem;}
+    .event .event-swiper .slide3 .slide-title2::after {width: 2rem; height: 2rem;}
+    .event .event-swiper .swiper-pagination-fraction {width: 8%; left: 85%; padding: .4rem .6rem;}
+
+    footer .inner .footer-right1 .center, footer .inner .footer-right1 .insta, footer .inner .footer-bottom ul {width: 50%;}
+    footer .inner .footer-right2 p {font-size: .65rem;}
+}
+
+
+/* width 1100px 이상일 때 */
+@media screen and (min-width:1100px){
+    header .hamburger-popup .popup-wrapper {width: 40%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box {gap: 0;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .eng-tit {font-size: 2.1rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .ko-tit em {display: inline-block;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain { width: 60%; left: -6%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .ko-tit {font-size: 5rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .link {width: 20%; margin: 4rem 0 0 0;}
+
+    .title {display: block;}
+    .title p {text-align: center;}
+    .title a.more {justify-content: end;}
+
+    .list-box {flex-wrap: nowrap; gap: 8px;}
+    .list-box li {width: calc(25% - 4px);}
+    .list-box li:nth-child(2n+1), .list-box li:nth-child(n+3):nth-child(-n+4) {padding: 0;}
+
+    .new-arrival {padding: 7rem 0;}
+
+    .delivery .delivery-title {text-align: center;}
+    .delivery .deli-list-box .text-box .info {width: 40%;}
+    .delivery .deli-list-box .text-box .title p, .delivery .deli-list-box .text-box .title p.name {font-size: 1.5rem; text-align: left;}
+
+    .md-recommend .product-box .title-list .tab {justify-content: center;}
+
+    .eco-deal .eco-comment {text-align: center; font-size: 1rem;}
+    .eco-deal .time-bg {aspect-ratio: 0; background: none;}
+    .eco-deal .time-bg .time {color: #333;}
+    .eco-deal .list-box { position: relative; width: 90%; justify-self: center; align-items: center;}
+    .eco-deal .list-box .ecoSwiper {display: block; padding: 3rem 0; order: 2; width: 80%;}
+    .eco-deal .mb-list-box {display: none;}
+    .eco-deal .img-box {width: 100%;}
+    .eco-deal .ecoSwiper .slide1 .img-box .img {background: url(../images/ecodeal-img1.png) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide2 .img-box .img {background: url(../images/ecodeal-img2.png) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide3 .img-box .img {background: url(../images/ecodeal-img4.png) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide4 .img-box .img {background: url(../images/ecodeal-img5.png) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide5 .img-box .img {background: url(../images/리뉴어스\ 텀블러.jpg) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide6 .img-box .img {background: url(../images/에코브릭\ 샴푸바.jpg) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide7 .img-box .img {background: url(../images/에이올\ 핸드워시.jpg) no-repeat center/cover;}
+    .eco-deal .ecoSwiper .slide8 .img-box .img {background: url(../images/넬리\ 베이비선물세트.jpg) no-repeat center/cover;}
+    .eco-deal .txt-box {width: 100%; padding: 8px 0 0 0;}
+    .eco-deal .txt-box .txt-title {display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;}
+    .eco-deal .ecoSwiper .swiper-pagination-horizontal {bottom: 0; top: auto;}
+    .eco-deal .ecoSwiper .swiper-pagination-progressbar {background: #F8F8F8; box-shadow: 0 0 5px rgba(0,0,0,0.1); margin: 10px 0;}
+    .eco-deal .ecoSwiper .swiper-pagination-progressbar-fill {background: #C6E8B1;}
+    .eco-deal .list-box .ecoswiper-button-next, .eco-deal .list-box .ecoswiper-button-prev {display: block; transition: all .3s ease;}
+    .eco-deal .list-box .ecoswiper-button-next:hover, .eco-deal .list-box .ecoswiper-button-prev:hover {transform: scale(1.1);}
+    .eco-deal .list-box .ecoswiper-button-prev:hover {transform: scale(1.1) rotate(180deg);}
+    .eco-deal .ecoswiper-button-prev {left: -10%; background: url(../images/more-icon.png) no-repeat center/cover; width: 2rem; height: 2rem; border-radius: 100%; background-color: #C6E8B1; background-size: 50%; transform: rotate(180deg);
+    color: transparent; order: 1;}
+    .eco-deal .ecoswiper-button-next {right: -10%; background: url(../images/more-icon.png) no-repeat center/cover; width: 2rem; height: 2rem; border-radius: 100%; background-color: #C6E8B1; background-size: 50%; color: transparent; order: 3;}
+    
+    .event .event-swiper .swiper-slide {aspect-ratio: 450 / 120;}
+    .event .event-swiper .swiper-pagination-fraction {width: 5%; left: 90%;}
+
+    footer .inner .footer-right2 p {font-size: .8rem;}
+    footer .inner .footer-bottom ul li a {font-size: .8rem};
+
+
+}
+
+
+/* width 1595px 이상일 때 */
+@media screen and (min-width:1595px) {
+    html {font-size: 20px;}
+    body {font-size: 1rem;}
+    
+    header {height: 60px;}
+    header .pc-header {display: block; height: 120px; display: flex; flex-direction: column; --inner-padding:12rem; padding: 0 var(--inner-padding);}
+    header .pc-header .top {display: flex; align-items: center; height: 60px; justify-content: space-between;}
+    header .pc-header .top a.logo {display: block;}
+    header .pc-header .top a.logo p {font-family: "Montserrat", sans-serif; color: #fff; text-transform: uppercase; font-weight: bold; font-size: 1.5rem; transition: color 1s ease;}
+    header .pc-header .top a.logo p.scroll {color: #333;}
+    header .pc-header .top .util {display: flex; align-items: center; gap: 3rem;}
+    header .pc-header .top .util .search input {width: 16rem; height: 30px; border-radius: 100px; background: rgba(255, 255, 255, 0.3) url("../images/search_icon.png") no-repeat; background-size: 12px; background-position: 96% 50%; padding: 0 1rem; box-sizing: border-box;}
+    header .pc-header .top .util .search input.scroll {background: #C6E8B1 url("../images/search_icon-black.png") no-repeat; background-size: 12px; background-position: 96% 50%;}
+    header .pc-header .top .util .search input::placeholder {color: #fff; opacity: .7; font-size: .8rem;}
+    header .pc-header .top .util .search input.scroll::placeholder {color: #333;}
+    header .pc-header .top .util a {color: #fff; font-size: .8rem; transition: color 1s ease;}
+    header .pc-header .top .util a.scroll {color: #333;}
+
+    header .pc-header nav {height: 60px; transition: all 1s ease;}
+    header .pc-header nav.scroll {display: none;}
+    header .pc-header nav ul {display: flex; align-items: center; height: 100%; justify-content: space-between;}
+    header .pc-header nav ul li {margin-bottom: 0px; transition: all .2s ease;}
+    header .pc-header nav ul li:hover {margin-bottom: 4px; }
+    header .pc-header nav ul li a {color: #fff; font-size: .8rem; position: relative; }
+    header .pc-header nav ul li a::before, header .pc-header nav ul li a::after { display: inline-block; opacity: 0; -webkit-transition: -webkit-transform 0.3s, opacity 0.2s; -moz-transition: -mox-transform 0.3s, opacity 0.2s; transition: transform 0.3s, opacity 0.2s;}
+    header .pc-header nav ul li a::before {margin-right: 10px; content: "["; -webkit-transform: translateX(10px); -moz-transform: translateX(10px); transform: translateX(10px);}
+    header .pc-header nav ul li a::after {margin-left: 10px; content: "]"; -webkit-transform: translateX(-10px); -moz-transform: translateX(-10px); transform: translateX(-10px);}
+    header .pc-header nav ul li a:hover::before, header .pc-header nav ul li a:hover::after {opacity: 1; -webkit-transform: translateX(0px); -moz-transform: translateX(0px); transform: translateX(0px); }
+
+
+    header .mb-header, header .hamburger-popup {display: none;}
+
+    main .inner {--inner-padding:12rem; padding: 0 var(--inner-padding);}
+    .main-banner .main-banner-swiper {padding: 120px 0 0 0;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box, .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box {padding: 5rem 7rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .ko-tit {font-size: 5rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain ul li {width: 17%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box {gap: 0;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .link {width: 17%;}
+    .main-banner .main-banner-swiper .mainswiper-button-next, .main-banner .main-banner-swiper .mainswiper-button-prev {display: block; mix-blend-mode: difference; opacity: .5;}
+    .main-banner .main-banner-swiper .mainswiper-button-next {width: 1.2rem; height: 3rem; background: url(../images/right.png) no-repeat center/cover; position: absolute; top: 50%; right: 2rem; z-index: 10; }
+    .main-banner .main-banner-swiper .mainswiper-button-prev {width: 1.2rem; height: 3rem; background: url(../images/left.png) no-repeat center/cover; position: absolute; top: 50%; left: 2rem; z-index: 10;}
+
+    .best-product {padding: 12rem 0 0 0;}
+
+    /* .new-arrival, .delivery {width: calc(100% + 2*var(--inner-padding)); margin-left: calc(-1 * var(--inner-padding));
+    margin-right: calc(-1 * var(--inner-padding)); padding: 12rem 0;} */
+    .new-arrival .banner-img {aspect-ratio: 360 / 75;}
+
+    .delivery .deli-list-box .text-box {padding: 3rem;}
+    .delivery .deli-list-box .text-box .title p, .delivery .deli-list-box .text-box .title p.name {font-size: 2rem;}
+    .delivery .deli-list-box .text-box .info {bottom: 2rem; right: 2rem; width: 38%;}
+    .delivery .deli-list-box .text-box .info p:first-child {font-size: 1rem;}
+    .delivery .deli-list-box .text-box .info p {font-size: .8rem;}
+
+    .md-recommend {padding: 12rem 0 0 0;}
+
+    .eco-deal {overflow-x: visible; padding: 12rem 0 0 0;}
+    .eco-deal .list-box {width: 100%;}
+
+
+    .event {padding: 12rem 0;}
+    .event .event-swiper .swiper-slide {aspect-ratio: 450 / 90; padding: 5rem 2.5rem;}
+    .event .event-swiper .swiper-pagination-fraction {width: 4%; left: 90%; bottom: 1rem;}
+
+    footer .inner {padding: 2rem 12rem; width: 100%; box-sizing: border-box; flex-wrap: nowrap; flex-direction: row; gap: 6rem;}
+    footer .inner .footer1, footer .inner .footer2 {width: 50%;}
+    footer .inner .footer-left .footer-logo {text-align: left; margin: 0 0 1rem 0;}
+    footer .inner .footer-left .introduce, footer .inner .footer-left .link {display: block; font-size: .7rem; line-height: 1.2rem;}
+    footer .inner .footer-left .link {display: flex; gap: 2rem; margin: 1rem 0 0 0;}
+    footer .inner .footer-left .link a {color: #fff;}
+    
+    footer .inner .footer-bottom {order: 2; margin: 3rem 0 0 0;}
+    footer .inner .footer-bottom ul {margin: 0; width: 80%; justify-content: start; gap: 1rem;}
+    footer .inner .footer-right1 {order: 3;}
+    footer .inner .footer-right1 .center {border: none; font-size: 1.2rem; margin: 0 0 1rem 0; text-align: left; padding: 0;}
+    footer .inner .footer-right1 .insta {border: none; margin: 0; justify-content: start; gap: 10px; padding: 0; margin: 0 0 1rem 0;}
+    footer .inner .footer-right2 p {text-align: left;}
+    footer .inner .footer-right2 p .line {display: block; color: transparent; font-size: .3rem;}
+}
+
+
+/* width 1920px 이상일 때 */
+@media screen and (min-width:1920px){
+    .main-banner {height: 800px;}
+    
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1{background-position: 74% 50%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2{background-position: 60% 70%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box, .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box {padding: 5rem 8rem;}
+    
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain {bottom: 2rem; left: -6rem; width: 50%;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain p {font-size: 1rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide1 .txt-box .explain ul li {width: 12%; font-size: .9rem; line-height: 1.2rem;}
+    
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .ko-tit {font-size: 4rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .comment {font-size: 1rem;}
+    .main-banner .main-banner-swiper .swiper-wrapper .slide2 .txt-box .link {width: 14%; padding: .8rem;}
+
+    .list-box li .txt-info {font-size: .8rem;}
+
+    .delivery .deli-list-box .text-box .info {width: 45%;}
+    .event .event-swiper .swiper-pagination-fraction {width: 3%; left: 92%;}
+} 

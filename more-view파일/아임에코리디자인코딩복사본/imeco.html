@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'M ECO</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--  Swiper 11 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/index.js" defer></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/respon.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="inner">
+                <div class="pc-header">
+                  <div class="top">
+                    <a href="#" class="logo">
+                      <span class="hide">로고</span>
+                      <p>i'm eco</p>
+                    </a>
+                    <div class="util">
+                      <div class="search">
+                        <span class="hide">검색</span>
+                        <input id="search" name="search" type="text" style="color: #333;" autofocus placeholder="search" required />
+                      </div>
+                      <a href="" class="login">로그인<span class="hide">로그인</span></a>
+                      <a href="" class="mypage">마이페이지<span class="hide">마이 페이지</span></a>
+                      <a href="" class="signup">회원가입<span class="hide">회원가입</span></a>
+                    </div>
+                  </div>
+                  <nav>
+                    <ul>
+                      <li><a href="">베스트</a></li>
+                      <li><a href="">신상품</a></li>
+                      <li><a href="">에코클럽 정기구독</a></li>
+                      <li><a href="">고마운샘</a></li>
+                      <li><a href="">가벼운샘</a></li>
+                      <li><a href="">깨끗한샘</a></li>
+                      <li><a href="">MD추천</a></li>
+                      <li><a href="">에코딜</a></li>
+                      <li><a href="">아임에코 소식</a></li>
+                    </ul>
+                  </nav>
+                </div>
+                <div class="mb-header">
+                  <div class="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <a href="#" class="logo">
+                    <span class="hide">로고</span>
+                    <p>i'm eco</p>
+                  </a>
+                  <a href="" class="cart"><span class="hide">장바구니</span></a>
+                </div>
+                <div class="hamburger-popup">
+                  <div class="dim"></div>
+                  <div class="popup-wrapper">
+                    <img src="images/exit-icon.png" alt="나가기 버튼" class="exit">
+                    <div class="search">
+                      <input id="popup-search" name="search" type="text" style="color: #333;" autofocus placeholder="search" required />
+                    </div>
+                    <div class="mb-util">
+                      <a href="" class="login">log in</a>
+                      <a href="" class="mypage">my page</a>
+                    </div>
+                    <span class="line"></span>
+                    <div class="shop">
+                      <p>shop all</p>
+                      <ul class="shop-menu">
+                        <li><a href="">베스트</a></li>
+                        <li><a href="">신상품</a></li>
+                        <li><a href="">정기배송</a></li>
+                        <li><a href="">MD추천</a></li>
+                        <li><a href="">에코딜</a></li>
+                        <li><a href="">아임에코 소식</a></li>
+                      </ul>
+                    </div>
+                    <div class="mb-ham-footer">
+                      <a href="" class="center">고객센터</a>
+                      <a href="" class="logout">로그아웃</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </header>
+        <main>
+          <section class="main-banner">
+            <div class="swiper main-banner-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide slide3">
+                  <div class="txt-box">
+                    <h1>We are closer to the zero.</h1>
+                    <p>더 가볍게, 더 무해하게.<br>아임에코는 환경에 남기는 발자국은 ZERO에 가깝게 만듭니다.<br>지구와 나에게 더 가치있는 소비를 시작하세요.</p>
+                  </div>
+                </div>
+                <div class="swiper-slide slide1">
+                  <div class="txt-box">
+                    <p class="eng-tit">i'm eco premium</p>
+                    <p class="ko-tit">아임에코 <em>가벼운샘</em></p>
+                    <p class="comment">BPA FREE, 우리의 첫 친환경 경량화 생수</p>
+                    <div class="explain">
+                      <p>| 매월 공인인증기관 검사진행 |</p>
+                      <ul>
+                        <li>수질검사 <em>적합</em></li>
+                        <li>미세플라스틱 <em>불검출</em></li>
+                        <li>용기 호르몬 <em>불검출</em></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide slide2">
+                  <div class="txt-box">
+                    <p class="eng-tit">i'm eco new water</p>
+                    <p class="ko-tit">티니핑 워터 출시</p>
+                    <p class="comment">아이들이 좋아하는 어린이 생수<br>매일 즐거운 물 마시는 시간</p>
+                    <a href="" class="link">구매하러 가기</a>
+                  </div>
+                </div>
+              </div>
+              <div class="mainswiper-button-next"></div>
+              <div class="mainswiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+          <div class="inner">
+            <section class="best-product" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease" data-aos-anchor-placement="center-bottom">
+              <div class="best-title title">
+                <p>베스트</p>
+                <a href="" class="more">more</a>
+              </div>
+              <ul class="list-box">
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <p class="txt-info">
+                    생분해
+                  </p>
+                  <p class="txt-title">
+                    [바스틀리] 100% 천연 대나무 친환경 토일렛티슈, 12롤
+                  </p>
+                  <p class="txt-price">
+                    18,900원
+                  </p>
+                  <p class="review">
+                    <em>★4.94</em> · 리뷰 3,354
+                  </p>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <p class="txt-info">
+                    플라스틱 저감 · 생분해
+                  </p>
+                  <p class="txt-title">
+                    [마이케어] 친환경 자연생분해 프리미엄 물티슈 헤이그린, 70매입 X 10개
+                  </p>
+                  <p class="txt-price">
+                    27,900원
+                  </p>
+                  <p class="review">
+                    <em>★4.96</em> · 리뷰 4,114
+                  </p>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <p class="txt-info">
+                    저탄소 · 플라스틱 저감
+                  </p>
+                  <p class="txt-title">
+                    [슈가랩] 100% 사탕수수 저탄소 지구사랑 에코지퍼백, 대형, 20매입
+                  </p>
+                  <p class="txt-price">
+                    2,800원
+                  </p>
+                  <p class="review">
+                    <em>★4.91</em> · 리뷰 1,428
+                  </p>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <p class="txt-info">
+                    생분해
+                  </p>
+                  <p class="txt-title">
+                    [그리네라] 무표백 친환경 대나무 키친타올 3겹, 100매, 12입
+                  </p>
+                  <p class="txt-price">
+                    19,800원
+                  </p>
+                  <p class="review">
+                    <em>★4.95</em> · 리뷰 2,812
+                  </p>
+                </li>
+              </ul>
+            </section>
+            <section class="new-arrival">
+              <a href="" class="banner-img"></a>
+            </section>
+            <section class="delivery">
+              <p class="delivery-title">정기배송</p>
+              <ul class="deli-list-box">
+                <li class="first-box">
+                  <a href="" class="img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"></a>
+                  <div class="text-box" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <ul class="num">
+                      <li class="point">1</li>
+                      <li>2</li>
+                      <li>3</li>
+                    </ul>
+                    <div class="title">
+                      <p>I’M ECO PREMIUM</p>
+                      <p class="name">고마운샘</p>
+                    </div>
+                    <div class="info">
+                      <p>100% 사탕수수 보틀에 담은 아임에코 고마운 샘</p>
+                      <p>미세플라스틱 걱정 없는 프리미엄 미네랄 워터</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="second-box">
+                  <a href="" class="img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"></a>
+                  <div class="text-box" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <ul class="num">
+                      <li>1</li>
+                      <li class="point">2</li>
+                      <li>3</li>
+                    </ul>
+                    <div class="title">
+                      <p>I’M ECO PREMIUM</p>
+                      <p class="name">가벼운샘</p>
+                    </div>
+                    <div class="info">
+                      <p>우리의 첫 친환경 경량화 생수 아임에코 가벼운 샘</p>
+                      <p>축령산 내 청정원시림 보호구역 물골안 맑은 1급수</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="third-box">
+                  <a href="" class="img" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100"></a>
+                  <div class="text-box" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="200">
+                    <ul class="num">
+                      <li>1</li>
+                      <li>2</li>
+                      <li class="point">3</li>
+                    </ul>
+                    <div class="title">
+                      <p>I’M ECO PREMIUM</p>
+                      <p class="name">깨끗한샘</p>
+                    </div>
+                    <div class="info">
+                      <p>식물 유래 바이오 플라스틱으로 만든 아임에코 깨끗한 샘</p>
+                      <p>환경 호르몬으로부터 안전한 친환경 생수</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="md-recommend" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease" data-aos-anchor-placement="center-bottom">
+              <div class="md-title title">
+                <p>MD추천</p>
+                <a href=""class="more">more</a>
+              </div>
+              <div class="product-box">
+                <div class="title-list">
+                  <ul class="tab">
+                    <li>
+                      <a href="" class="active">건강한 비건 푸드</a>
+                      <!-- <a href="">건강한 비건 푸드</a> -->
+                    </li>
+                    <li>
+                      <a href="">댕냥이 집사들 주목</a>
+                    </li>
+                    <li>
+                      <a href="">대나무로 만들었어요</a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="list-box food active">
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[헬렌스쿠키] 아트 제로웨이스트 비건 쿠키, 다크초코</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>9,600원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[널담] 100% 식물성 저당 비건 베이글 3종 세트, 6개입</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>20,000원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[네니아] 비건인증 우리밀 노랑꼬마채식만두, 냉동, 1kg</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>14,900원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[네니아] 비건인증 우리밀 군만두, 1kg (50ea 내외)</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>13,500원</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list-box dog-cat">
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[개님의 상점] 개님의과자 팝팝이, 치킨팝, 120g, 가수분해 저알러지 간식</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>12,900원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[개님의 상점] 개님의과자 팝팝이, 덕팝, 120g, 가수분해 저알러지 간식</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>12,900원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[개님의 상점] 개님의과자 팝팝이, 비프팝, 120g, 가수분해 저알러지 간식</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>13,900원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[개님의상점] 개님의껌 가든레인져, 조이플래닛, M, 4개입</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>6,000원</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="list-box bamboo">
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[그리네라] 무표백 친환경 대나무키친타올 3겹,100매,12입</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>19,800원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[그리네라] 먼지 없는 친환경 대나무화장지, 12롤, 3개입</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>26,700원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[나누] 친환경 생분해, 지구를 지키는 대나무칫솔</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>1,300원</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="img-box">
+                      <a href="" class="img"></a>
+                    </div>
+                    <div class="txt-title">
+                      <p>[나누] 친환경 생분해, 지구를 위한 대나무 빨대, 100개</p>
+                    </div>
+                    <div class="txt-price">
+                      <p>8,800원</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <section class="eco-deal" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease" data-aos-anchor-placement="center-bottom">
+              <div class="eco-title title">
+                <p>에코딜</p>
+                <a href="" class="more">more</a>
+              </div>
+              <p class="eco-comment">눈여겨 본 제품이라면 놓칠 수 없는 핫딜찬스!</p>
+              <div class="time-bg">
+                <div class="time">
+                  <span class="hours"></span>
+                  <span class="col">:</span>
+                  <span class="minutes"></span>
+                  <span class="col">:</span>
+                  <span class="seconds"></span>
+                </div>
+              </div>
+              <div class="list-box">
+                <div class="ecoswiper-button-next"></div>
+                <div class="ecoswiper-button-prev"></div>
+                <div class="swiper ecoSwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide slide1">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            재활용
+                          </p>
+                          <p class="txt-title">
+                            현대카드 Our Bag (Black)
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">20%</p>
+                            <p class="txt-price">
+                              47,200원
+                            </p>
+                            <p class="cost">
+                              50,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide2">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            재활용
+                          </p>
+                          <p class="txt-title">
+                            현대카드 Our Bag (Green)
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">20%</p>
+                            <p class="txt-price">
+                              47,200원
+                            </p>
+                            <p class="cost">
+                              50,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide3">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            생분해
+                          </p>
+                          <p class="txt-title">
+                            [firstea] 퍼머넌트 그린, 10tb
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">15%</p>
+                            <p class="txt-price">
+                              13,600원
+                            </p>
+                            <p class="cost">
+                              16,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide4">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            건강식품
+                          </p>
+                          <p class="txt-title">
+                            [knola] 수제 시그니처 그래놀라, 200g
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">10%</p>
+                            <p class="txt-price">
+                              9,900원
+                            </p>
+                            <p class="cost">
+                              11,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide5">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            플라스틱 저감
+                          </p>
+                          <p class="txt-title">
+                            [리뉴어스] 리뉴 사탕수수 텀블러, 머드브라운
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">20%</p>
+                            <p class="txt-price">
+                              20,800원
+                            </p>
+                            <p class="cost">
+                              26,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide6">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            플라스틱 저감
+                          </p>
+                          <p class="txt-title">
+                            [에코브릭] 건강모발용 약산성 샴푸바
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">10%</p>
+                            <p class="txt-price">
+                              12,420원
+                            </p>
+                            <p class="cost">
+                              13,800원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide7">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            재활용
+                          </p>
+                          <p class="txt-title">
+                            [에이올] 제주 메밀 비건 핸드워시, 650ml
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">25%</p>
+                            <p class="txt-price">
+                              18,000원
+                            </p>
+                            <p class="cost">
+                              24,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide slide8">
+                        <div class="img-box">
+                          <a href="" class="img"></a> 
+                        </div>
+                        <div class="txt-box">
+                          <p class="txt-info">
+                            생분해
+                          </p>
+                          <p class="txt-title">
+                            [NELLIE'S] 안전한 식물성계면활성제 넬리 베이비 선물세트, 틴 1kg+파우치 726g
+                          </p>
+                          <div class="price-info">
+                            <p class="sale">20%</p>
+                            <p class="txt-price">
+                              47,200원
+                            </p>
+                            <p class="cost">
+                              50,000원
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+              </div>
+              <ul class="mb-list-box">
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <div class="txt-box">
+                    <p class="txt-info">
+                      재활용
+                    </p>
+                    <p class="txt-title">
+                      현대카드 Our Bag (Black)
+                    </p>
+                    <div class="price-info">
+                      <p class="sale">20%</p>
+                      <p class="txt-price">
+                        47,200원
+                      </p>
+                      <p class="cost">
+                        50,000원
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <div class="txt-box">
+                    <p class="txt-info">
+                      재활용
+                    </p>
+                    <p class="txt-title">
+                      현대카드 Our Bag (Green)
+                    </p>
+                    <div class="price-info">
+                      <p class="sale">20%</p>
+                      <p class="txt-price">
+                        47,200원
+                      </p>
+                      <p class="cost">
+                        50,000원
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <div class="txt-box">
+                    <p class="txt-info">
+                      생분해
+                    </p>
+                    <p class="txt-title">
+                      [firstea] 퍼머넌트 그린, 10tb
+                    </p>
+                    <div class="price-info">
+                      <p class="sale">15%</p>
+                      <p class="txt-price">
+                        13,600원
+                      </p>
+                      <p class="cost">
+                        16,000원
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img-box">
+                    <a href="" class="img"></a>
+                  </div>
+                  <div class="txt-box">
+                    <p class="txt-info">
+                      건강식품
+                    </p>
+                    <p class="txt-title">
+                      [knola] 수제 시그니처 그래놀라, 200g
+                    </p>
+                    <div class="price-info">
+                      <p class="sale">10%</p>
+                      <p class="txt-price">
+                        9,900원
+                      </p>
+                      <p class="cost">
+                        11,000원
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </section>
+            <section class="event">
+              <div class="swiper event-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slide1">
+                    <p class="slide-title">Subscribe eco delivery!</p>
+                    <p class="sub">자유롭게 배송 날짜와 주기를 선택하고 정기적으로 배송을 받아보세요.<br>편하고, 빠르고, 경제적인 정기배송만의 혜택을 누릴 수 있습니다.</p>
+                  </div>
+                  <div class="swiper-slide slide2">
+                    <p class="slide-title">자연으로 돌아가는 고마운샘</p>
+                    <p class="sub">아임에코에서만 만날 수 있는 ‘진짜 친환경’ 프리미엄 생수.<br>6년간 연구, 개발하여 특허받은 소재로 지구와 나에게 고마운 샘을 만나보세요.</p>
+                  </div>
+                  <div class="swiper-slide slide3">
+                    <p class="slide-title1">포인트로</p>
+                    <p class="slide-title2">아임에코 깨끗한샘 받자</p>
+                    <p class="sub">아임에코를 이용하는 T우주 고객님께 드리는 특별한 혜택!</p>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </section>
+          </div>
+        </main>
+        <footer>
+          <div class="inner">
+            <div class="footer1">
+              <div class="footer-left">
+                <div class="footer-logo">i'm eco</div>
+                <p class="introduce">
+                  법인명 : 산수음료㈜ ㅣ 대표자 : 박윤자
+                  ㅣ 사업자 등록번호 : 132-81-02037<br>사업장 소재지
+                  : 경기도 남양주시 수동면 비룡로900번길 40-15<br>서울 사무소 :
+                  서울특별시 서초구 강남대로30길 66 산수빌딩 7층<br>통신판매등록번호
+                  : 2018-화도수동-0527 ㅣ 개인정보관리책임자 :
+                  김영환<br>이메일 : <span>customer@sansu.co.kr</span> ㅣ 팩스 :
+                  02-571-4541<br><span>COPYRIGHT © SANSU.ALL RIGHTS RESERVED</span>
+                </p>
+                <div class="link">
+                  <a href="">사업자등록확인</a>
+                  <a href="">토스페이먼츠구매안전 서비스</a>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <ul>
+                  <li>
+                    <a href="https://imecomall.co.kr/v2/about/imeco.php">아임에코 소개</a>
+                  </li>
+                  <li>
+                    <a href="https://imecomall.co.kr/v2/bbs/content.pgp?co_id=provision">이용약관</a>
+                  </li>
+                  <li>
+                    <a href="https://imecomall.co.kr/v2/bbs/content.php?co_id=privacy"><em>개인정보처리방침</em></a>
+                  </li>
+                  <li><a href="#">인재채용</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer2">
+              <div class="footer-right1">
+                <p class="center">고객센터</p>
+                <div class="insta">
+                  <img src="images/insta-icon.png" alt="insta-icon">
+                  <p>@imeco_official</p>
+                </div>
+              </div>
+              <div class="footer-right2">
+                <p>02-3497-9000<span class="line">ㅣ</span>평일 09:00 - 16:00<span class="line">ㅣ</span>점심시간 11:30 - 12:30</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <a href="#" class="gotop"><span></span></a>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>

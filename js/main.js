@@ -44,16 +44,16 @@ $(document).ready(function(){
     })
     
     // detail view 바깥영역이나 x표 누르면 팝업 사라지게
-    $('.detailview-popup-wrapper, .detailview-popup .detailview-popup-wrapper .exit').on('click',function(){
+    $('.detailview-popup, .detailview-popup .detailview-popup-wrapper .exit').on('click',function(){
       $('.detailview-popup').removeClass('active');
     })
 
     // detail view 해당이미지와 연결시키기
     const popupImg = [
-      "images/nutty butty 그래놀라 상세페이지 jpg이미지.jpg",
-      "images/카사바고양이모래 상세페이지 작업.jpg",
-      "images/스파오 레더자켓 상세페이지3.jpg",
-      "images/NANU 대나무칫솔 상세페이지 작업-최종.jpg"
+      "images/nuttybutty그래놀라상세페이지jpg이미지.jpg",
+      "images/카사바고양이모래상세페이지작업.jpg",
+      "images/스파오레더자켓상세페이지3.jpg",
+      "images/NANU대나무칫솔상세페이지작업-최종.jpg"
     ];
 
     $('.webdesign .content').each(function(index){
@@ -63,46 +63,46 @@ $(document).ready(function(){
     })
 
     // design 이미지 누르면 해당 이미지 팝업창이 뜨도록
-    $('.design .image').on('click',function(){
-      $('.design-popup').addClass('active');
+    // $('.design .image').on('click',function(){
+    //   $('.design-popup').addClass('active');
 
-      var detail = $(this).data("detail");
-
-
-      var image = $(this).data("image");
-      var title = $(this).data("title");
-      var description = $(this).data("description");
-      var tool = $(this).data("tool");
-
-      var imageData = getImageData(detail);
-
-      $(".design-popup-img-box .design-box .design-img").css("background-image", 'url(${imageData.image})');
-      $(".design-popup-img-box .first-title").text(imageData.title);
-      $(".design-popup-img-box .second-title").text(imageData.description);
-      $(".design-popup-img-box .tool").text(imageData.tool);
+    //   var detail = $(this).data("detail");
 
 
-    })
+    //   var image = $(this).data("image");
+    //   var title = $(this).data("title");
+    //   var description = $(this).data("description");
+    //   var tool = $(this).data("tool");
 
-    function getImageData(detail){
-      var imagePopup = {
-        1 : {
-          image: "images/개고몰-mainbanner-cat1.png",
-          title: "배너디자인",
-          description: "퍼펙트 카사바 고양이 모래 3종 출시 기념 20% 할인 배너디자인",
-          tool : "tool : figma"
-        },
-        2 : {
-          image: "images/뚜레쥬르 말차 sns 이미지2.jpg",
-          title: "SNS 디자인",
-          description: "출시예정인 뚜레쥬르의 말차크림빵 소개 sns 디자인",
-          tool : "tool : adobe photoshop"
-        },
-      }
+    //   var imageData = getImageData(detail);
+
+    //   $(".design-popup-img-box .design-box .design-img").css("background-image", 'url(${imageData.image})');
+    //   $(".design-popup-img-box .first-title").text(imageData.title);
+    //   $(".design-popup-img-box .second-title").text(imageData.description);
+    //   $(".design-popup-img-box .tool").text(imageData.tool);
 
 
-      return imagePopup[detail];
-    }
+    // })
+
+    // function getImageData(detail){
+    //   var imagePopup = {
+    //     1 : {
+    //       image: "images/개고몰-mainbanner-cat1.png",
+    //       title: "배너디자인",
+    //       description: "퍼펙트 카사바 고양이 모래 3종 출시 기념 20% 할인 배너디자인",
+    //       tool : "tool : figma"
+    //     },
+    //     2 : {
+    //       image: "images/뚜레쥬르 말차 sns 이미지2.jpg",
+    //       title: "SNS 디자인",
+    //       description: "출시예정인 뚜레쥬르의 말차크림빵 소개 sns 디자인",
+    //       tool : "tool : adobe photoshop"
+    //     },
+    //   }
+
+
+    //   return imagePopup[detail];
+    // }
 
     // design popup 바깥영역이나 exit 누르면 팝업창이 꺼지도록
     $('.design-popup-wrapper, .design-popup-img-box .exit').on('click',function(){

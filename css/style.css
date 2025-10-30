@@ -23,11 +23,11 @@ body {
 }
 
 .wrapper {
-    background: url(../images/noise-grid_BG-2.png) no-repeat top;
+    background: url(../images/noise-grid-BG-2.png) no-repeat top;
 }
 
 .wrapper.dark {
-    background: url(../images/noise-grid_BG-darkmode-2.png) no-repeat top;
+    background: url(../images/noise-grid-BG-darkmode-2.png) no-repeat top;
 }
 
 .overlay {
@@ -192,8 +192,8 @@ body {
 
 /* dark mode 토글 버튼 */
 #header .darkBtn {
-    width: 3.2rem;
-    height: 1.7rem;
+    width: 3rem;
+    height: 1.2rem;
     border-radius: 6.25rem;
     border: 2px solid #333;
     background-color: white;
@@ -240,7 +240,7 @@ body {
 }
 
 #header #toggle:checked~.toggleSwitch .toggleButton {
-    margin-left: 1.55rem;
+    margin-left: 1.8rem;
     transition: all 0.5s ease-in-out;
     background: #fff url("../images/dark-333.png") no-repeat center;
     background-size: 0.7rem 0.9rem;
@@ -340,7 +340,7 @@ body {
 #main>.ellipse1,
 #main>.ellipse2 {
     display: block;
-    background: url(../images/img_deblisher_ellipse.png) no-repeat center / 100% auto;
+    background: url(../images/img-deblisher-ellipse.png) no-repeat center / 100% auto;
     position: absolute;
     border-radius: 50%;
     /* display: none; */
@@ -541,14 +541,14 @@ body {
 .introduce .btns .instagram2 .icon {
     /* width: 30%;  */
     width: 100%;
-    background: url(../images/instagram\ icon.png) no-repeat center;
+    background: url(../images/instagramicon.png) no-repeat center;
 }
 
 .introduce .btns .resume .icon {
     /* width: 30%; 
     height: 105%; */
     width: 100%;
-    background: url(../images/resume\ icon.png) no-repeat center / 31.5px 31.5px;
+    background: url(../images/resumeicon.png) no-repeat center / 31.5px 31.5px;
 }
 
 .introduce .btns a .txt {
@@ -726,7 +726,7 @@ body {
     margin-top: 3rem;
 }
 
-.works h1 {
+.works p.main-title {
     font-family: "against";
     color: #333;
     font-size: 2.5rem;
@@ -735,7 +735,7 @@ body {
     padding-top: 3rem;
 }
 
-.works h1.dark {
+.works p.main-title.dark {
     color: #fff;
 }
 
@@ -1075,41 +1075,41 @@ body {
 
 /* image-click thumbnail change */
 .works .publishing .portfolio .image-click {
-    background: url(../images/img_portfolio_thumbnail-light.png) no-repeat center/cover;
+    background: url(../images/img-portfolio-thumbnail-light.png) no-repeat center/cover;
     animation: portfolio 5s ease infinite;
 }
 
 @keyframes portfolio {
     50% {
-        background-image: url(../images/img_portfolio_thumbnail-dark.png);
+        background-image: url(../images/img-portfolio-thumbnail-dark.png);
     }
 }
 
-.works .publishing .gegomall .image-click {
-    background: url(../images/img_개고몰_thumbnail.png) no-repeat center/cover;
+.works .publishing .imeco .image-click {
+    background: url(../images/아임에코2025썸네일이미지.png) no-repeat center/cover;
 }
 
-.works .publishing .imeco .image-click {
-    background: url(../images/img_아임에코썸네일.png) no-repeat center/cover;
+.works .publishing .gegomall .image-click {
+    background: url(../images/img-개고몰-thumbnail.png) no-repeat center/cover;
 }
 
 .works .publishing .media-site .image-click {
-    background: url(../images/img_mediasite_thumbnail.png) no-repeat center;
+    background: url(../images/img-mediasite-thumbnail.png) no-repeat center;
     /* background-size: cover auto !important; */
     /* background-size: 192% !important; */
     background-position: center 2rem !important;
 }
 
 .works .clonecoding .firstkids .image-click {
-    background: url(../images/img_firstkidsmall_thumbnail.png) no-repeat center / cover;
+    background: url(../images/img-firstkidsmall-thumbnail.png) no-repeat center / cover;
 }
 
 .works .clonecoding .anychem .image-click {
-    background: url(../images/img_anychem_thumbnail.png) no-repeat center / cover;
+    background: url(../images/img-anychem-thumbnail.png) no-repeat center / cover;
 }
 
 .works .clonecoding .choosa .image-click {
-    background: url(../images/img_추사기념관_thumbnail.png) no-repeat center / cover;
+    background: url(../images/img-추사기념관-thumbnail.png) no-repeat center / cover;
 }
 
 .works .clonecoding .choosa .choosa-txt {
@@ -1119,7 +1119,7 @@ body {
 }
 
 .works .clonecoding .geoje .image-click {
-    background: url(../images/img_거제청년센터이룸_thumbnail.png) no-repeat center / cover;
+    background: url(../images/img-거제청년센터이룸-thumbnail.png) no-repeat center / cover;
 }
 
 .works .clonecoding .geoje .geoje-txt {
@@ -1150,19 +1150,19 @@ body {
 }
 
 .works .webdesign .granola .image-click {
-    background: url(../images/nutty\ butty\ 그래놀라\ 상세페이지\ 화질낮은버전.png) no-repeat center /cover;
+    background: url(../images/nuttybutty그래놀라상세페이지화질낮은버전.png) no-repeat center /cover;
 }
 
 .works .webdesign .cassava .image-click {
-    background: url(../images/카사바고양이모래\ 상세페이지\ 작업.jpg) no-repeat center /cover;
+    background: url(../images/카사바고양이모래상세페이지작업.jpg) no-repeat center /cover;
 }
 
 .works .webdesign .spao .image-click {
-    background: url(../images/스파오\ 레더자켓\ 상세페이지3.jpg) no-repeat center /cover;
+    background: url(../images/스파오레더자켓상세페이지3.jpg) no-repeat center /cover;
 }
 
 .works .webdesign .nanu .image-click {
-    background: url(../images/NANU\ 대나무칫솔\ 상세페이지\ 작업-최종.jpg) no-repeat center /cover;
+    background: url(../images/NANU대나무칫솔상세페이지작업-최종.jpg) no-repeat center /cover;
 }
 
 /* detailview-popup */
@@ -1177,23 +1177,26 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .detailview-popup.active {
-    display: block;
+    /* display: block; */
+    display: flex;
 }
 
 .detailview-popup .detailview-popup-wrapper {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
-    position: relative;
+    /* position: relative; */
 }
 
 .detailview-popup .detailview-popup-wrapper .detailview-popup-img-box {
     position: relative;
-    top: 0;
+    /* top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     width: 100%;
     max-width: 860px;
     height: 100%;
@@ -1209,8 +1212,9 @@ body {
 
 .detailview-popup .detailview-popup-wrapper .exit {
     position: fixed;
+    /* position: absolute; */
     top: 2%;
-    right: 2%;
+    right: 4%;
     display: block;
     width: 24px;
     height: 24px;
@@ -1218,7 +1222,7 @@ body {
     padding: 5px;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 99999;
+    z-index: 100000;
 }
 
 .detailview-popup .detailview-popup-wrapper .exit:hover {
@@ -1286,7 +1290,7 @@ body {
     background-color: #98df86;
 }
 .design .news .image-box .image-click {
-    background: url(../images/카드뉴스\ 모음.png) no-repeat center/cover;
+    background: url(../images/카드뉴스모음png.png) no-repeat center/cover;
     animation: banner linear 15s infinite;
 }
 
@@ -1305,8 +1309,28 @@ body {
     background-color: #ff8797;
 }
 .design .poster .image-box .image-click {
-    background: url(../images/포스터\ 모음.png) no-repeat center/cover;
+    background: url(../images/포스터모음.png) no-repeat center/cover;
     animation: banner linear 10s infinite;
+}
+
+.design .character .image-box {
+    aspect-ratio: 1 / 1;
+}
+.design .character .image-box .bar .circle .circle1 {
+    background-color: #ff6b97;
+}
+
+.design .character .image-box .bar .circle .circle2 {
+    background-color: #414158;
+}
+
+.design .character .image-box .bar .circle .circle3 {
+    background-color: #ff9100;
+}
+.design .character .image-box .image-click {
+    /* background: url(../images/캐릭터.png) no-repeat center/cover; */
+    background: url(../images/캐릭터png화질낮은버전.png) no-repeat center/cover;
+    animation: banner linear 20s infinite;
 }
 
 
@@ -1359,7 +1383,7 @@ body {
     display: block;
     width: 100vw; 
     height: calc(100vw);
-    background: url(../images/img_footer_ellipse1.png) no-repeat center / 100%;
+    background: url(../images/img-footer-ellipse1.png) no-repeat center / 100%;
     position: absolute;
     top: 2%;
     left: -43%;
@@ -1369,7 +1393,7 @@ body {
     display: block;
     width: 100vw; 
     height: calc(100vw);
-    background: url(../images/img_footer_ellipse2.png) no-repeat center / 100%;
+    background: url(../images/img-footer-ellipse2.png) no-repeat center / 100%;
     position: absolute;
     /* bottom: -26rem; */
     right: -28%;

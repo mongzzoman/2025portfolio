@@ -38,7 +38,9 @@
     .introduce .tag ul li:last-child {display: none;}
 
     .works>div {margin-top: 15rem;}
-    .works h1 {font-size: 3.5rem;}
+    .works p.main-title {font-size: 3.5rem;}
+
+    /* .detailview-popup .detailview-popup-wrapper .exit {right: 4%;} */
 
     #footer .ellipse1 {width: 82vw; height: calc(82vw); top: 6%; left: -16%;}
     #footer .ellipse2 {width: 80vw; height: calc(80vw); right: -16%;}
@@ -48,13 +50,15 @@
 
 /* width 1100px 이상일 때 */
 @media screen and (min-width:1100px){
-    .works h1 {font-size: 4.2rem;}
+    .works p.main-title {font-size: 4.2rem;}
     .works .contents {margin-top: 4rem;}
     .works .content {flex-direction: row; width: 100%; gap: 3rem; margin-bottom: 12rem;}
     .works .content .image-box {width: 60%; aspect-ratio: 1.6 / 1;}
     .works .content .explain {width: 40%;}
     .works .content .explain h2 {font-size: 3rem; text-align: left;}
     .design .content {margin-top: 4rem;}
+
+    /* .detailview-popup .detailview-popup-wrapper .exit {right: 13.5%;} */
 }
 
 /* width 1334px 이상일 때 */
@@ -85,10 +89,12 @@
     .introduce .introduce-contents .introduce-txt .txts p.point::after {width: 103%; left: 49%;}
 
     .works>div {margin-top: 20rem;}
-    .works h1 {font-size: 5rem; text-align: left;}
+    .works p.main-title {font-size: 5rem; text-align: left;}
     .works .content {margin-bottom: 20rem; }
     .works .content .image-box {aspect-ratio: 1.4 / 1;}
     .design .content {margin-top: 6rem;}
+
+    /* .detailview-popup .detailview-popup-wrapper .exit {right: 19.5%;} */
 
     #footer .ellipse1 {width: 60vw; height: calc(60vw); top: 0; left: -8%;}
     #footer .inner {padding: 0 10%;}
@@ -102,11 +108,13 @@
     .first-page .main-text p.publisher {font-size: 13rem; line-height: 8.4rem;}
     .first-page .txt-2 {line-height: 8rem;}
 
-    .works h1 {font-size: 6rem;}
+    .works p.main-title {font-size: 6rem;}
     .works .contents {margin-top: 6rem;}
     .works .content .image-box {aspect-ratio: 1.6 / 1;}
     .works .content .explain {gap: 1.2rem;}
     .works .content .explain h2 {font-size: 3.5rem;}
+
+    /* .detailview-popup .detailview-popup-wrapper .exit {right: 25%;} */
 
     #footer .inner h1 {font-size: 8rem; line-height: 8.7rem;}
 }
@@ -129,8 +137,10 @@
     .first-page .txt-2 {line-height: 10rem;}
 
     .works>div {margin-top: 25rem;}
-    .works h1 {font-size: 6rem;}
+    .works p.main-title {font-size: 6rem;}
     .works .content {margin-bottom: 20rem;}
+
+    /* .detailview-popup .detailview-popup-wrapper .exit {right: 29%;} */
 
     #footer .inner {padding: 0 15%;}
     #footer .ellipse1 {width: 50vw; height: calc(50vw); top: 0%; left: 4%;}
