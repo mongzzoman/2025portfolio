@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    
+
+
     // header에 메뉴li를 클릭하면 해당 영역으로 이동
     $("header .menu li").click(function (e) {
         e.preventDefault();
@@ -213,6 +216,19 @@ $(document).ready(function(){
       $('a').toggleClass('dark');
       $('#main > .ellipse1').toggleClass('dark');
       $('#main > .ellipse2').toggleClass('dark');
+      
+      $('.first-main').toggleClass('dark');
+      $('.first-main .title1 .and').toggleClass('dark');
+      $('.first-main .title1 .and-dark').toggleClass('dark');
+      $('.first-main .title2 .web').toggleClass('dark');
+      $('.first-main .title2 .web-dark').toggleClass('dark');
+      $('.first-main .title2 .designer').toggleClass('dark');
+      $('.first-main .title2 .designer-dark').toggleClass('dark');
+      $('.first-main .title4 .sub-title').toggleClass('dark');
+      $('.first-main .title4 .sub-title-dark').toggleClass('dark');
+      $('.first-main .title3 p').toggleClass('dark');
+      $('.first-main .title5 .publisher').toggleClass('dark');
+
       $('.first-page .text-box').toggleClass('dark');
       $('.first-page .text-box p').toggleClass('dark');
       $('.first-page .text-box .txt-1 span').toggleClass('dark');
@@ -220,7 +236,7 @@ $(document).ready(function(){
       $('.introduce .btns a .txt').toggleClass('dark');
       $('.introduce .introduce-contents .introduce-txt').toggleClass('dark');
       $('.introduce .skill-box p').toggleClass('dark');
-      $('.works h1').toggleClass('dark');
+      $('.works p.main-title').toggleClass('dark');
       $('.works .contents .content .image-box').toggleClass('dark');
       $('.works .contents .content .explain p').toggleClass('dark');
       $('.works .contents .content .explain h2').toggleClass('dark');

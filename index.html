@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/respon.css">
     <!-- aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <!-- js -->
@@ -66,10 +67,53 @@
             </div>
         </div>
         <main id="main">
-            <span class="ellipse1" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="2600" data-aos-delay="300"></span>
-            <span class="ellipse2" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="3000" data-aos-delay="500"></span>
+            <!-- <span class="ellipse1" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="2600" data-aos-delay="300"></span>
+            <span class="ellipse2" data-aos="fade-in" data-aos-easing="ease" data-aos-duration="3000" data-aos-delay="500"></span> -->
+            <div class="first-main">
+                <div class="title-box">
+                    <div class="title1">
+                        <img src="자소서표지구상재료들/character.png" alt="캐릭터" class="character">
+                        <img src="자소서표지구상재료들/and2.png" alt="그리고" class="and">
+                        <img src="자소서표지구상재료들/and2white.png" alt="그리고" class="and-dark">
+                        <img src="자소서표지구상재료들/effect1-2.png" alt="효과" class="effect1-2 effect">
+                        <img src="자소서표지구상재료들/effect4-2.png" alt="효과" class="effect4-2 effect">
+                        <img src="자소서표지구상재료들/effect8-2.png" alt="효과" class="effect8-2 effect">
+                        <img src="자소서표지구상재료들/effect9-2.png" alt="효과" class="effect9-2 effect">
+                        <img src="자소서표지구상재료들/effect10-2.png" alt="효과" class="effect10-2 effect">
+                        <img src="자소서표지구상재료들/effect13-2.png" alt="효과" class="effect13-2 effect">
+                    </div>
+                    <div class="title2">
+                        <img src="자소서표지구상재료들/web.png" alt="웹" class="web">
+                        <img src="자소서표지구상재료들/webwhite.png" alt="웹" class="web-dark">
+                        <img src="자소서표지구상재료들/cursor.png" alt="마우스 커서 이미지" class="cursor">
+                        <img src="자소서표지구상재료들/designer.png" alt="디자이너" class="designer">
+                        <img src="자소서표지구상재료들/designerwhite.png" alt="디자이너" class="designer-dark">
+                        <img src="자소서표지구상재료들/effect3-2.png" alt="효과" class="effect3-2 effect">
+                        <img src="자소서표지구상재료들/effect14-2.png" alt="효과" class="effect14-2 effect">
+                    </div>
+                    <div class="title3">
+                        <p>character stationery fancy designer .  2020 - 2023 <br>
+                            web uiux designer .  2025 <br>
+                            I'm Yena Yim, a creative "<em> Deblisher </em>" &nbsp; -- &nbsp; a web publisher skilled <br>
+                            in both design and coding, ready to bring ideas to life.</p>
+                        <img src="자소서표지구상재료들/effect15-2.png" alt="효과" class="effect15-2  effect">
+                        <img src="자소서표지구상재료들/effect17-2.png" alt="효과" class="effect17-2  effect">
+                    </div>
+                    <div class="title4">
+                        <img src="자소서표지구상재료들/subtitle.png" alt="디자인과 코딩 모두 가능한 디블리셔" class="sub-title">
+                        <img src="자소서표지구상재료들/subtitlewhite.png" alt="디자인과 코딩 모두 가능한 디블리셔" class="sub-title-dark">
+                        <img src="자소서표지구상재료들/effect2-2.png" alt="효과" class="effect2-2 effect">
+                        <img src="자소서표지구상재료들/effect5-2.png" alt="효과" class="effect5-2 effect">
+                        <img src="자소서표지구상재료들/effect7-2.png" alt="효과" class="effect7-2 effect">
+                        <img src="자소서표지구상재료들/effect16-2.png" alt="효과" class="effect16-2  effect">
+                    </div>
+                    <div class="title5">
+                        <p class="publisher"></p>
+                    </div>
+                </div>
+            </div>
             <div class="inner">
-                <section class="first-page">
+                <!-- <section class="first-page">
                     <h2 class="hide">첫 메인화면</h2>
                     <div class="text-box">
                         <p class="txt-1" data-aos="zoom-in" data-aos-duration="600" data-aos-easing="ease"><span>web</span> DE<span>sign + pu</span>blisher <span></span></p>
@@ -79,7 +123,7 @@
                         </div>
                         <p class="txt-2">디자인+코딩 모두 가능한 "디블리셔" 임예나입니다.</p>
                     </div>
-                </section>
+                </section> -->
                 <section class="introduce">
                     <h2 class="hide">소개페이지</h2>
                     <div class="intro-inner">
@@ -655,8 +699,57 @@
             </a>
         </footer>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
         AOS.init();
+
+        // const text ="PUBLISHER";
+        // const typingEl = document.querySelector(".publisher")
+        // typingEl.textContent="";
+
+        // gsap.to({}, {
+        // duration: text.length * 0.3, //전체 지속시간
+        // repeat: 0,
+        // onUpdate: function() {
+        //     const progress = this.progress();
+        //     const current = Math.floor(progress * text.length);
+        //     typingEl.textContent = text.slice(0, current);
+        // }
+        // });
+
+        const text = "PUBLISHER";
+        const container = document.querySelector(".publisher");
+
+        // 각 글자를 한 글자씩 나눠서 span으로 감싸기(따로 애니메이션을 줘야하니까!)
+        text.split("").forEach((char) => {
+            const span = document.createElement("span");
+            span.textContent = char;
+            container.appendChild(span);
+        });
+
+        // 1️⃣ 등장 애니메이션
+        gsap.to(".publisher span", {
+            opacity: 1,  // 보이게
+            y: 0,  // 제자리로 이동
+            rotation: 0,  // 회전 원래대로
+            duration: 0.6, 
+            ease: "back.out(2)",  // 약간 튀어나오 듯 부드럽게 나오게
+            stagger: 0.08,  // 한 글자씩 순서대로 등장
+            onComplete: () => {
+        // 2️⃣ 등장 완료 후, 각 글자가 랜덤하게 둥둥 떠다니는 애니메이션
+            gsap.utils.toArray(".publisher span").forEach((span) => {
+                gsap.to(span, {
+                    y: "+=" + gsap.utils.random(3, 20),      // 위아래 움직임
+                    rotation: gsap.utils.random(-15, 15),    // 회전 각도 (좌우 랜덤)
+                    duration: gsap.utils.random(0.5, 1),     // 속도 랜덤
+                    ease: "sine.inOut", // 부드러운 파동 느낌
+                    repeat: -1, // 무한반복 (0:한번만실행(기본값), 1:한번끝나고다시한번더(총 두번), 2: 총 세번)
+                    yoyo: true, // 끝까지 갔다가 거꾸로 되돌아오는 식으로 반복, 왕복움직임 (false:끝까지 갔다가 다시 처음으로 순간이동 후 반복)
+                    delay: gsap.utils.random(0, 0.1),         // 약간의 딜레이로 파도처럼 움직임
+                    });
+                });
+            },
+        });
     </script>
 </body>
 </html>

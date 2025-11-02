@@ -53,7 +53,8 @@ body {
 #header {
     width: 100%;
     height: 50px;
-    background: linear-gradient(#fff, #ececec);
+    /* background: linear-gradient(#fff, #ececec); */
+    background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4), inset 0 0 5px rgba(0, 0, 0, 0.2);
     position: fixed;
     z-index: 100;
@@ -337,6 +338,340 @@ body {
     padding: 50px 0 0;
 }
 
+
+
+
+.first-main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin: 0 0 20rem 0;
+}
+.first-main::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -165%; left: 0; right: 0;
+    box-shadow: 0 156vh 100px rgba(255, 255, 255, 1);
+}
+.first-main.dark::before {
+    box-shadow: none;
+}
+.first-main::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/dotwhite.png) no-repeat center/cover;
+    background-position: 100% -10px;
+    opacity: 0.3;
+    background-size: 460%;
+}
+.first-main.dark::after {
+    mix-blend-mode: color-burn;
+    opacity: 1;
+}
+.first-main .title-box {
+    width: 100%;
+    min-width: 360px;
+    max-width: 1920px;
+    height: calc(100vh - 50px);
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.first-main .title1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+.first-main img {
+    object-fit: contain;
+}
+.first-main .title1 .character {
+    width: 73%;
+}
+.first-main .title1 .and {
+    width: 9%;
+}
+.first-main .title1 .and-dark {
+    display: none;
+    width: 9%;
+}
+.first-main .title1 .and.dark {
+    display: none;
+}
+.first-main .title1 .and-dark.dark {
+    display: block;
+}
+.first-main .title1 .effect1-2 {
+    position: absolute;
+    width: 3%;
+    top: -49%;
+    left: 22%;
+    animation: effect1-2 .7s steps(2) infinite;
+}
+@keyframes effect1-2 {
+    0% {top: -49%; left: 22%;}
+    100% {top: -47%; left: 22.3%;}
+}
+.first-main .title1 .effect4-2 {
+    position: absolute;
+    width: 3%;
+    top: 91%;
+    left: 4%;
+    animation: effect4-2 .7s steps(2) infinite;
+}
+@keyframes effect4-2 {
+    0% {top: 93%; left: 4.5%;}
+    100% {top: 91%; left: 4%;}
+}
+.first-main .title1 .effect8-2 {
+    position: absolute;
+    width: 3%;
+    top: -39%;
+    right: 6%;
+    animation: effect8-2 .7s steps(2) infinite;
+}
+@keyframes effect8-2 {
+    0% {top: -39%; right: 6%;}
+    100% {top: -35%; right: 7%;}
+}
+.first-main .title1 .effect9-2 {
+    position: absolute;
+    width: 3%;
+    top: -29%;
+    left: 57%;
+    animation: effect9-2 .7s steps(2) infinite;
+}
+@keyframes effect9-2 {
+    0% {top: -27%; left: 58%;}
+    100% {top: -29%; left: 57%;}
+}
+.first-main .title1 .effect10-2 {
+    position: absolute;
+    width: 3%;
+    top: 96%;
+    right: 17%;
+    animation: effect10-2 .7s steps(2) infinite;
+}
+@keyframes effect10-2 {
+    0% {top: 96%; right: 17%;}
+    100% {top: 93%; right: 16%;}
+}
+.first-main .title1 .effect13-2 {
+    position: absolute;
+    width: 3%;
+    top: 98%;
+    left: 51%;
+    animation: effect13-2 .7s steps(2) infinite;
+}
+@keyframes effect13-2 {
+    0% {top: 98%; left: 51%;}
+    100% {top: 92%; left: 52%;}
+}
+.first-main .title2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.first-main .title2 .web {
+    width: 28%;
+}
+.first-main .title2 .web-dark {
+    display: none;
+    width: 28%;
+}
+.first-main .title2 .web.dark {
+    display: none;
+}
+.first-main .title2 .web-dark.dark {
+    display: block;
+}
+.first-main .title2 .designer {
+    width: 57%;
+}
+.first-main .title2 .designer-dark {
+    width: 57%;
+    display: none;
+}
+.first-main .title2 .designer.dark {
+    display: none;
+}
+.first-main .title2 .designer-dark.dark {
+    display: block;
+}
+.first-main .title2 .cursor {
+    position: absolute;
+    width: 6%;
+    top: 106%;
+    left: 7%;
+    animation: cursor .7s steps(2) infinite;
+}
+@keyframes cursor {
+    0% {top: 110%;}
+    100% {top: 106%;}
+}
+.first-main .title2 .effect3-2 {
+    position: absolute;
+    width: 3%;
+    top: 98%;
+    left: 33%;
+    animation: effect3-2 .7s steps(2) infinite;
+}
+@keyframes effect3-2 {
+    0% {top: 98%; left: 33%;}
+    100% {top: 92%; left: 32%;}
+}
+.first-main .title2 .effect14-2 {
+    position: absolute;
+    width: 3%;
+    top: 106%;
+    right: 8%;
+    animation: effect14-2 .7s steps(2) infinite;
+}
+@keyframes effect14-2 {
+    0% {top: 106%; right: 8%;}
+    100% {top: 100%; right: 9%;}
+}
+.first-main .title3 {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.first-main .title3 p {
+    text-align: center;
+    font-family: 'Hamchorom';
+    font-size: .7rem;
+}
+.first-main .title3 p.dark {
+    color: #fff;
+}
+.first-main .title3 p em {
+    font-weight: bold;
+}
+.first-main .title3 .effect15-2 {
+    position: absolute;
+    width: 4%;
+    top: 48%;
+    left: 5%;
+    animation: effect15-2 .7s steps(2) infinite;
+}
+@keyframes effect15-2 {
+    0% {top: 44%; left: 5%;}
+    100% {top: 48%; left: 4%;}
+}
+.first-main .title3 .effect17-2 {
+    position: absolute;
+    width: 3%;
+    top: 56%;
+    right: 8%;
+    animation: effect17-2 .7s steps(2) infinite;
+}
+@keyframes effect17-2 {
+    0% {top: 56%; right: 6%;}
+    100% {top: 58%; right: 4%;}
+}
+.first-main .title4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.first-main .title4 .sub-title {
+    width: 90%;
+}
+.first-main .title4 .sub-title-dark {
+    width: 90%;
+    display: none;
+}
+.first-main .title4 .sub-title.dark {
+    display: none;
+}
+.first-main .title4 .sub-title-dark.dark {
+    display: block;
+}
+.first-main .title4 .effect2-2 {
+    position: absolute;
+    width: 4%;
+    top: -75%;
+    right: 4%;
+    animation: effect2-2 .7s steps(2) infinite;
+}
+@keyframes effect2-2 {
+    0% {top: -75%; right: 4%;}
+    100% {top: -68%; right: 6%;}
+}
+.first-main .title4 .effect5-2 {
+    position: absolute;
+    width: 3%;
+    top: -53%;
+    left: 19%;
+    animation: effect5-2 .7s steps(2) infinite;
+}
+@keyframes effect5-2 {
+    0% {top: -50%; left: 17%;}
+    100% {top: -53%; left: 19%;}
+}
+.first-main .title4 .effect7-2 {
+    position: absolute;
+    width: 4%;
+    top: 65%;
+    right: 3%;
+    animation: effect7-2 .7s steps(2) infinite;
+}
+@keyframes effect7-2 {
+    0% {top: 75%; right: 5%;}
+    100% {top: 65%; right: 3%;}
+}
+.first-main .title4 .effect16-2 {
+    position: absolute;
+    width: 3%;
+    top: -14%;
+    left: 2%;
+    animation: effect16-2 .7s steps(2) infinite;
+}
+@keyframes effect16-2 {
+    0% {top: -24%; left: 3%;}
+    100% {top: -14%; left: 1.5%;}
+}
+.first-main .title5 {
+    width: 100%;
+}
+.first-main .title5 .publisher {
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 3.5rem;
+}
+.first-main .title5 .publisher.dark {
+    color: #fff;
+}
+.first-main .title5 .publisher span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px) rotate(10deg);
+}
+
+
+
+
+
+
+
+
 #main>.ellipse1,
 #main>.ellipse2 {
     display: block;
@@ -378,6 +713,8 @@ body {
 #main .inner {
     padding: 0 4%;
 }
+
+
 
 
 /* main 첫 시작 화면 */
@@ -447,7 +784,7 @@ body {
 
 .first-page .main-text p.design {
     font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 15rem;
     /* text-align: left; */
     margin-left: -1.5rem;
@@ -476,6 +813,11 @@ body {
     letter-spacing: .01rem;
     /* padding: 1rem 0; */
 }
+
+
+
+
+
 
 
 /* introduce */
@@ -680,9 +1022,6 @@ body {
     transform: scale(1.1) translate(-45%, -45%);
 }
 
-.introduce .tag {
-    /* height: 5%; */
-}
 
 .introduce .tag ul {
     display: flex;

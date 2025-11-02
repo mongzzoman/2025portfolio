@@ -47,6 +47,21 @@
     font-family: "aloha";
     src: url("../fonts/AlohaMagazine-DemoVersion-Black.otf");
 }
+/* 함초롱바탕체 */
+@font-face {
+    font-family: 'Hamchorom';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/HANBatang.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Hamchorom';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/HANBatangB.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
 a {
     color: #333;
     text-decoration: none;

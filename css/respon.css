@@ -1,24 +1,47 @@
+/* width 490px 이상일 때 */
+@media screen and (min-width:490px) {
+    .first-main .title5 .publisher {font-size: 4.6rem;}
+}
+
+
 /* width 520px 이상일 때 */
 @media screen and (min-width:520px){
     html{font-size: 18px;}
     body{font-size: 1rem;}
 
     #main>.ellipse1, #main>.ellipse2 {top: 2%;}
+    .first-main::after {background-size: 350%;}
+    .first-main .title4 .sub-title {width: 87%;}
+    .first-main .title5 .publisher {font-size: 4.2rem;}
 
+    .first-main .title2 .cursor {width: 5%;}
+    @keyframes effect2-2 {0% {top: -75%; right: 4%;} 100% {top: -64%; right: 5%;}}
+    @keyframes effect17-2 {0% {top: 56%; right: 8%;} 100% {top: 59%; right: 7%;}}
+    
     .works>div {margin-top: 10rem;}
     .works .clonecoding .geoje .geoje-txt {letter-spacing: -.2rem;}
     .works .content .explain p {letter-spacing: .01rem;}
-
+    
     #footer {padding-top: 20rem;}
     #footer .inner h1 {font-size: 4rem; line-height: 4.4rem;}
     #footer .ellipse1 {top: 11%;}
 }
 
+/* width 630px 이상일 때 */
+@media screen and (min-width:630px) {
+    .first-main .title5 .publisher {font-size: 4.8rem;}
+    @keyframes cursor {0% {top: 100%;} 100% {top: 90%; left: 8%;}}
+    @keyframes effect3-2 {0% {top: 90%; left: 33%;} 100% {top: 95%; left: 32%;}}
+    @keyframes effect17-2 {0% {top: 58%; right: 10%;} 100% {top: 62%; right: 12%;}}
+}
+
 /* width 740px 이상일 때 */
 @media screen and (min-width:740px){
-    
-
     #main>.ellipse1, #main>.ellipse2 {top: 1.2%;}
+
+    .first-main::after {background-size: 210%;}
+    .first-main .title5 .publisher {font-size: 6rem; line-height: 5rem;}
+    .first-main .effect {width: 2.5% !important;}
 
     .introduce .btns {width: auto; padding: 0 2rem;}
     .introduce .btns a {width: auto; flex: 1; gap: 1rem;}
@@ -40,16 +63,30 @@
     .works>div {margin-top: 15rem;}
     .works p.main-title {font-size: 3.5rem;}
 
-    /* .detailview-popup .detailview-popup-wrapper .exit {right: 4%;} */
-
     #footer .ellipse1 {width: 82vw; height: calc(82vw); top: 6%; left: -16%;}
     #footer .ellipse2 {width: 80vw; height: calc(80vw); right: -16%;}
     #footer .inner h1 {font-size: 6rem; line-height: 6.4rem;}
 }
 
+/* width 960px 이상일 때 */
+@media screen and (min-width:960px) {
+    .first-main .title5 .publisher {font-size: 7rem; line-height: 6rem;}
+    .first-main .effect {width: 2% !important;}
+    .first-main .title2 .cursor {width: 4%;}
+    .first-main .title3 p {font-size: .8rem;}
+    @keyframes effect1-2 {0% {top: -29%; left: 22%;} 100% {top: -25%; left: 22.3%;}}
+    @keyframes effect8-2 {0% {top: -25%; right: 6%;} 100% {top: -15%; right: 7%;}}
+    @keyframes effect15-2 {0% {top: 58%; left: 9%;} 100% {top: 60%; left: 10%;}}
+    @keyframes effect17-2 {0% {top: 58%; right: 20%;} 100% {top: 62%; right: 22%;}}
+}
 
 /* width 1100px 이상일 때 */
 @media screen and (min-width:1100px){
+    .first-main::after {background-size: 150%;}
+    .first-main .title3 p {font-size: .9rem;}
+    .first-main .title5 .publisher {font-size: 9rem; line-height: 8rem;}
+    @keyframes effect3-2 {0% {top: 85%; left: 33%;} 100% {top: 88%; left: 32%;}}
+
     .works p.main-title {font-size: 4.2rem;}
     .works .contents {margin-top: 4rem;}
     .works .content {flex-direction: row; width: 100%; gap: 3rem; margin-bottom: 12rem;}
@@ -57,8 +94,6 @@
     .works .content .explain {width: 40%;}
     .works .content .explain h2 {font-size: 3rem; text-align: left;}
     .design .content {margin-top: 4rem;}
-
-    /* .detailview-popup .detailview-popup-wrapper .exit {right: 13.5%;} */
 }
 
 /* width 1334px 이상일 때 */
@@ -78,7 +113,8 @@
     #main .ellipse2 {width: 80vw; height: calc(80vw); top: 1.2%; left: -35%;}
     #main .inner {padding: 0 10%;}
 
-    
+    .first-main .title5 .publisher {font-size: 9.5rem;}
+    .first-main .effect {width: 1.5% !important;}
 
     .first-page .main-text {flex-direction: row; align-items: end; justify-content: center; gap: 1rem; }
     .first-page .main-text p.design {font-size: 11rem;}
@@ -94,8 +130,6 @@
     .works .content .image-box {aspect-ratio: 1.4 / 1;}
     .design .content {margin-top: 6rem;}
 
-    /* .detailview-popup .detailview-popup-wrapper .exit {right: 19.5%;} */
-
     #footer .ellipse1 {width: 60vw; height: calc(60vw); top: 0; left: -8%;}
     #footer .inner {padding: 0 10%;}
     #footer .inner h1 {font-size: 7rem; line-height: 7.7rem;}
@@ -103,6 +137,31 @@
 
 /* width 1595px 이상일 때 */
 @media screen and (min-width:1595px) {
+
+    .first-main .title1 .character {width: 55%;}
+    .first-main .title1 .and, .first-main .title1 .and-dark {width: 8%;}
+    .first-main .title2 .web, .first-main .title2 .web-dark {width: 20%;}
+    .first-main .title2 .designer, .first-main .title2 .designer-dark {width: 43%;}
+    .first-main .title3 p {font-size: 1.2rem;}
+    .first-main .title4 .sub-title, .first-main .title4 .sub-title-dark {width: 64%;}
+    .first-main .title5 .publisher {font-size: 8.2rem; line-height: 7rem;}
+
+    .first-main .title2 .cursor {width: 3%;}
+    @keyframes cursor {0% {top: 100%; left: 22%;} 100% {top: 90%; left: 24%;}}
+    .first-main .title4 .effect2-2,.first-main .title4 .effect5-2,.first-main .title1 .effect8-2, .first-main .title1 .effect9-2, .first-main .title1 .effect13-2, .first-main .title2 .effect14-2 {width: 1% !important;}
+    @keyframes effect2-2 {0% {top: -5%; right: 14%;} 100% {top: 10%; right: 15%;}}
+    @keyframes effect3-2 {0% {top: 85%; left: 36%;} 100% {top: 87%; left: 37%;}}
+    @keyframes effect4-2 {0% {top: 100%; left: 14%;} 100% {top: 98%; left: 13%;}}
+    @keyframes effect5-2 {0% {top: 50%; left: 16%;} 100% {top: 55%; left: 15%;}}
+    @keyframes effect7-2 {0% {top: 126%; right: 15%;} 100% {top: 129%; right: 14%;}}
+    @keyframes effect8-2 {0% {top: -5%; right: 16%;} 100% {top: 5%; right: 17%;}}
+    @keyframes effect10-2 {0% {top: 107%; right: 17%;} 100% {top: 104%; right: 16%;}}
+    @keyframes effect13-2 {0% {top: 104%; left: 49%;} 100% {top: 100%; left: 50%;}}
+    @keyframes effect14-2 {0% {top: 106%; right: 18%;} 100% {top: 100%; right: 19%;}}
+    @keyframes effect15-2 {0% {top: 58%; left: 19%;} 100% {top: 65%; left: 20%;}}
+    @keyframes effect16-2 {0% {top: 180%; left: 13%;} 100% {top: 204%; left: 15%;}}
+    @keyframes effect17-2 {0% {top: 71%; right: 23%;} 100% {top: 76%; right: 22%;}}
+
     .first-page .txt-1 {line-height: 5rem;}
     .first-page .main-text p.design {font-size: 13rem;}
     .first-page .main-text p.publisher {font-size: 13rem; line-height: 8.4rem;}
@@ -113,8 +172,6 @@
     .works .content .image-box {aspect-ratio: 1.6 / 1;}
     .works .content .explain {gap: 1.2rem;}
     .works .content .explain h2 {font-size: 3.5rem;}
-
-    /* .detailview-popup .detailview-popup-wrapper .exit {right: 25%;} */
 
     #footer .inner h1 {font-size: 8rem; line-height: 8.7rem;}
 }
@@ -131,6 +188,35 @@
 
     #main .inner {padding: 0 15%;}
 
+    .first-main::before {top: -155%;}
+    .first-main::after {background-size: 100%;}
+    .first-main .title1 .character {width: 46%;}
+    .first-main .title1 .and, .first-main .title1 .and-dark {width: 6%;}
+    .first-main .title2 .web, .first-main .title2 .web-dark {width: 18%;}
+    .first-main .title2 .designer, .first-main .title2 .designer-dark {width: 35%;}
+    .first-main .title3 p {font-size: 1.2rem;}
+    .first-main .title4 .sub-title, .first-main .title4 .sub-title-dark {width: 53%;}
+    .first-main .title5 .publisher {font-size: 13rem; line-height: 10rem;}
+
+    .first-main .effect {width: 1% !important;}
+    .first-main .title4 .effect2-2,.first-main .title4 .effect5-2,.first-main .title1 .effect8-2, .first-main .title1 .effect9-2, .first-main .title1 .effect13-2, .first-main .title2 .effect14-2 {width: 0.7% !important;}
+    .first-main .title2 .cursor {width: 2%;}
+    @keyframes cursor {0% {top: 100%; left: 28.5%;} 100% {top: 96%; left: 29%;}}
+    @keyframes effect1-2 {0% {top: -9%; left: 23%;} 100% {top: -8%; left: 23.5%;}}
+    @keyframes effect2-2 {0% {top: 45%; right: 19%;} 100% {top: 47%; right: 20%;}}
+    @keyframes effect3-2 {0% {top: 90%; left: 40%;} 100% {top: 92%; left: 40.5%;}}
+    @keyframes effect4-2 {0% {top: 110%; left: 24%;} 100% {top: 108%; left: 23%;}}
+    @keyframes effect5-2 {0% {top: 60%; left: 21%;} 100% {top: 65%; left: 20%;}}
+    @keyframes effect7-2 {0% {top: 126%; right: 6%;} 100% {top: 130%; right: 6.5%;}}
+    @keyframes effect8-2 {0% {top: -5%; right: 23.5%;} 100% {top: -3%; right: 24%;}}
+    @keyframes effect9-2 {0% {top: -7%; left: 52.5%;} 100% {top: -9%; left: 52%;}}
+    @keyframes effect10-2 {0% {top: 112%; right: 22.5%;} 100% {top: 115%; right: 22%;}}
+    @keyframes effect13-2 {0% {top: 112%; left: 51%;} 100% {top: 108%; left: 51.5%;}}
+    @keyframes effect14-2 {0% {top: 118%; right: 23.5%;} 100% {top: 116%; right: 24%;}}
+    @keyframes effect15-2 {0% {top: 75%; left: 24%;} 100% {top: 90%; left: 25%;}}
+    @keyframes effect17-2 {0% {top: 90%; right: 27.5%;} 100% {top: 96%; right: 27%;}}
+    @keyframes effect16-2 {0% {top: 75%; left: 6%;} 100% {top: 80%; left: 7%;}}
+
     .first-page .txt-1 {line-height: 8rem;}
     .first-page .main-text p.design {font-size: 14rem;}
     .first-page .main-text p.publisher {font-size: 14rem; line-height: 8.3rem;}
@@ -139,8 +225,6 @@
     .works>div {margin-top: 25rem;}
     .works p.main-title {font-size: 6rem;}
     .works .content {margin-bottom: 20rem;}
-
-    /* .detailview-popup .detailview-popup-wrapper .exit {right: 29%;} */
 
     #footer .inner {padding: 0 15%;}
     #footer .ellipse1 {width: 50vw; height: calc(50vw); top: 0%; left: 4%;}
