@@ -699,23 +699,14 @@
             </a>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    
     <script>
         AOS.init();
 
-        // const text ="PUBLISHER";
-        // const typingEl = document.querySelector(".publisher")
-        // typingEl.textContent="";
-
-        // gsap.to({}, {
-        // duration: text.length * 0.3, //전체 지속시간
-        // repeat: 0,
-        // onUpdate: function() {
-        //     const progress = this.progress();
-        //     const current = Math.floor(progress * text.length);
-        //     typingEl.textContent = text.slice(0, current);
-        // }
-        // });
+        gsap.registerPlugin(ScrollTrigger);
 
         const text = "PUBLISHER";
         const container = document.querySelector(".publisher");
@@ -733,8 +724,8 @@
             y: 0,  // 제자리로 이동
             rotation: 0,  // 회전 원래대로
             duration: 0.6, 
-            ease: "back.out(2)",  // 약간 튀어나오 듯 부드럽게 나오게
-            stagger: 0.08,  // 한 글자씩 순서대로 등장
+            ease: "steps(1)",
+            stagger: 0.2,  // 한 글자씩 순서대로 등장
             onComplete: () => {
         // 2️⃣ 등장 완료 후, 각 글자가 랜덤하게 둥둥 떠다니는 애니메이션
             gsap.utils.toArray(".publisher span").forEach((span) => {
@@ -750,6 +741,50 @@
                 });
             },
         });
+
+    //    // 모든 .main-title 선택
+    //         const titles = document.querySelectorAll(".main-title");
+
+    //         // 각 타이틀마다 실행
+    //         titles.forEach((titleEl) => {
+    //         const text = titleEl.textContent;     // 원래 글자 저장
+    //         titleEl.textContent = "";             // 비우기
+
+    //         // 글자마다 <span> 만들어서 추가
+    //         text.split("").forEach((letter) => {
+    //             const span = document.createElement("span");
+    //             // 공백 문자면 &nbsp;로 변환
+    //             if (letter === " ") {
+    //                 span.innerHTML = "&nbsp;";
+    //             } else {
+    //                 span.textContent = letter;
+    //             }
+    //                 span.style.opacity = 0;           // 처음엔 숨기기
+    //                 span.style.display = "inline-block"; //transform이 잘 먹게 블록으로 처리
+    //                 titleEl.appendChild(span);
+    //         });
+
+    //         const spans = titleEl.querySelectorAll("span");
+
+    //         // 애니메이션 실행
+    //         gsap.to(spans, {
+    //             opacity: 1,
+    //             y: 0,
+    //             stagger: 0.1,                    // 글자 등장 간격
+    //             ease: "steps(1)",
+    //             duration: 0.5,
+    //             // repeat: -1,
+    //             scrollTrigger: {                  // 스크롤 시 section 들어올 때 실행
+    //                 trigger: titleEl,
+    //                 start: "top 60%",               // 화면 80% 지점에서 시작
+    //                 end: "bottom 14%",
+    //                 toggleActions: "play reverse play reverse",
+    //                 // markers: true
+    //             },
+    //         });
+    //         });
+    //         window.addEventListener("resize", () => ScrollTrigger.refresh());
+
     </script>
 </body>
 </html>

@@ -1,7 +1,4 @@
 $(document).ready(function(){
-    
-
-
     // header에 메뉴li를 클릭하면 해당 영역으로 이동
     $("header .menu li").click(function (e) {
         e.preventDefault();
@@ -40,7 +37,11 @@ $(document).ready(function(){
         $('.gotop').fadeOut();
       };
     })
-  
+    
+    
+
+
+
     // detail view 버튼 누르면 팝업 생성
     $('.detailview').on('click',function(){
       $('.detailview-popup').addClass('active');
